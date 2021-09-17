@@ -7,16 +7,27 @@ export const Page: React.FC = () => {
     <Container>
       <ModelsWrapper>
         <div>
-          <ModelSection
+          {[
+            'Model One',
+            'Model Two',
+            'Model Three',
+            'Model Four',
+            'Model Five',
+            'Model Six',
+            'Model Seven',
+          ].map(modelName => (
+            <ModelSection
+            key={modelName}
             className="colored"
             modelName="Model One"
             overlayNode={
               <DefaultOverlayContent
-                label="Model One"
+                label={modelName}
                 description="Order Online for Delivery"
               />
             }
           />
+          ))}          
         </div>
       </ModelsWrapper>
     </Container>
