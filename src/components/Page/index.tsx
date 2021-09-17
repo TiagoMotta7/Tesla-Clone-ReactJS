@@ -7,7 +7,8 @@ export const Page: React.FC = () => {
     <Container>
       <ModelsWrapper>
         <div>
-          <ModelSection 
+          <ModelSection
+            className="colored"
             modelName="Model One"
             overlayNode={
               <DefaultOverlayContent
