@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    .colored:nth-child(1) {
+  .colored:nth-child(1) {
   background: #f1ffe7;
   }
   .colored:nth-child(2) {
